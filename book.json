@@ -1,0 +1,47 @@
+{
+  "title": "团队 Vibe Coding 开发指南",
+  "description": "AI时代下的团队协作开发实践指南",
+  "author": "团队协作专家",
+  "language": "zh-hans",
+  "gitbook": "3.2.3",
+  "structure": {
+    "readme": "README.md",
+    "summary": "SUMMARY.md"
+  },
+  "plugins": [
+    "theme-default",
+    "search",
+    "lunr",
+    "sharing",
+    "fontsettings",
+    "highlight",
+    "livereload",
+    "anchorjs",
+    "edit-link",
+    "prism",
+    "-highlight",
+    "github",
+    "splitter"
+  ],
+  "pluginsConfig": {
+    "theme-default": {
+      "showLevel": true
+    },
+    "edit-link": {
+      "base": "https://github.com/your-username/team-vibe-coding-guide/edit/main",
+      "label": "编辑此页"
+    },
+    "github": {
+      "url": "https://github.com/your-username/team-vibe-coding-guide"
+    },
+    "sharing": {
+      "facebook": false,
+      "twitter": false,
+      "google": false,
+      "weibo": true,
+      "instapaper": false,
+      "vk": false,
+      "all": ["weibo"]
+    }
+  }
+}

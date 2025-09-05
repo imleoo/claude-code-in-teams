@@ -1,0 +1,35 @@
+{
+  "name": "team-vibe-coding-guide",
+  "version": "1.0.0",
+  "description": "团队 Vibe Coding 开发指南 - AI时代下的团队协作开发实践指南",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview",
+    "serve": "vitepress dev",
+    "deploy": "npm run build && gh-pages -d .vitepress/dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/team-vibe-coding-guide.git"
+  },
+  "keywords": [
+    "AI",
+    "团队协作",
+    "软件开发",
+    "文档驱动开发",
+    "Claude Code",
+    "VitePress"
+  ],
+  "author": "团队协作专家",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0",
+    "vue": "^3.4.0",
+    "gh-pages": "^6.1.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

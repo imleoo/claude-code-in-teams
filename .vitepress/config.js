@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: "团队 Vibe Coding 开发指南",
+  title: "团队Vibe Coding开发指南 - DDAD方法论",
   description: "AI时代下的团队协作开发实践指南",
   base: '/claude-code-in-teams/',
   themeConfig: {
@@ -20,7 +20,7 @@ export default defineConfig({
             link: '/part1/chapter1.md',
             items: [
               { text: '写作背景与行业变革', link: '/part1/chapter1/background.md' },
-              { text: '文档驱动开发（DADD）理念导入', link: '/part1/chapter1/dadd.md' },
+              { text: '文档驱动AI开发（DDAD）理念导入', link: '/part1/chapter1/ddad.md' },
               { text: '目标读者与阅读收益', link: '/part1/chapter1/audience.md' },
               { text: '行业趋势与挑战', link: '/part1/chapter1/trends.md' }
             ]

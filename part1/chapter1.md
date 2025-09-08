@@ -43,9 +43,9 @@ AI编码工具的普及正在重塑软件开发的生态系统。从GitHub Copil
 - 传统团队开发模式面临的挑战
 - 智能体编码对团队协作的重构价值
 
-### 2. 文档AI驱动开发（DADD）理念导入
+### 2. 文档驱动AI开发（DDAD）理念导入
 
-在AI辅助开发的新时代，"文档先行"比"代码驱动"更能发挥AI的协作优势。DADD（Document AI-Driven Development，文档AI驱动开发）不仅是一种开发方法，更是一种思维模式的转变。
+在AI辅助开发的新时代，"文档先行"比"代码驱动"更能发挥AI的协作优势。DDAD（Document-Driven AI Development，文档驱动AI开发）不仅是一种开发方法，更是一种思维模式的转变。
 
 **核心原则：**
 - **完整性**：文档应涵盖项目的全生命周期
@@ -76,6 +76,6 @@ AI编码工具的普及正在重塑软件开发的生态系统。从GitHub Copil
 ## 延伸阅读
 
 - [写作背景与行业变革](chapter1/background.md)
-- [文档驱动开发（DADD）理念导入](chapter1/dadd.md)
+- [文档驱动AI开发（DDAD）理念导入](chapter1/ddad.md)
 - [目标读者与阅读收益](chapter1/audience.md)
 - [行业趋势与挑战](chapter1/trends.md)

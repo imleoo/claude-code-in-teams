@@ -5,7 +5,7 @@
 * [前言](readme.md)
 * [第1章 前言——为什么需要团队 Vibe Coding](part1/chapter1.md)
   * [写作背景与行业变革](part1/chapter1/background.md)
-  * [文档驱动开发（DADD）理念导入](part1/chapter1/dadd.md)
+  * [文档驱动AI开发（DDAD）理念导入](part1/chapter1/ddad.md)
   * [目标读者与阅读收益](part1/chapter1/audience.md)
   * [行业趋势与挑战](part1/chapter1/trends.md)
 * [第2章 核心概念解析](part1/chapter2.md)

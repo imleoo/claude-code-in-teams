@@ -27,7 +27,7 @@
 ## 第三部分：团队协作核心流程
 
 * [第5章 需求拆解与任务分配](part3/chapter5.md)
-  * [AI辅助的需求分析方法](part3/chapter5/requirement-analysis.md)
+  * [AI协作的需求分析方法](part3/chapter5/requirement-analysis.md)
   * [需求阶段的心理安全建设](part3/chapter5/psychological-safety.md)
   * [需求文档标准化](part3/chapter5/doc-standards.md)
   * [AI 驱动的产品设计与管理](part3/chapter5-bis/product-management.md)
@@ -46,7 +46,7 @@
 * [第8章 RAG 聊天机器人开发案例（低风险）](part4/chapter8.md)
   * [项目背景与团队分工](part4/chapter8/project-setup.md)
   * [树状文档与模块信息表实践](part4/chapter8/doc-practice.md)
-  * [AI辅助开发全流程示例](part4/chapter8/development-flow.md)
+  * [AI协作开发全流程示例](part4/chapter8/development-flow.md)
 * [第9章 电商数据笔记本仪表盘重构（中低风险）](part4/chapter9.md)
   * [AI反向生成文档与任务规划](part4/chapter9/reverse-doc.md)
   * [重构规划与效率提升](part4/chapter9/refactoring.md)

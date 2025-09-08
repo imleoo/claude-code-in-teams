@@ -164,7 +164,7 @@ graph TB
 # Git工作流优化
 git worktree add ../feature-branch feature/new-feature
 cd ../feature-branch
-# 在独立工作树中进行AI辅助开发
+# 在独立工作树中进行AI协作开发
 ```
 
 **2. 项目管理集成**

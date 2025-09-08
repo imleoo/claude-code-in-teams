@@ -81,7 +81,7 @@ graph TB
 - 答案准确率 > 85%
 ```
 
-### 2. AI辅助的任务分解
+### 2. AI协作的任务分解
 
 使用Claude Code进行智能任务分解：
 
@@ -135,7 +135,7 @@ git worktree add ../rag-bot-ai feature/rag-engine
 
 **Day 1-2: 需求澄清**
 - 产品经理主导需求梳理
-- AI辅助生成用户故事和验收标准
+- AI协作生成用户故事和验收标准
 - 团队共同评审和确认
 
 **Day 3-4: 技术方案设计**
@@ -166,7 +166,7 @@ const ChatInterface: React.FC = () => {
   const [inputValue, setInputValue] = useState('');
   
   const sendMessage = async (content: string) => {
-    // AI辅助生成的消息发送逻辑
+    // AI协作生成的消息发送逻辑
     const response = await chatAPI.sendMessage(content);
     setMessages(prev => [...prev, response]);
   };
@@ -216,7 +216,7 @@ class RAGEngine:
 3. **端到端测试**：完整用户流程验证
 4. **性能测试**：并发和响应时间测试
 
-**AI辅助测试用例生成：**
+**AI协作测试用例生成：**
 ```python
 # AI生成的测试用例示例
 def test_rag_query_accuracy():
@@ -256,7 +256,7 @@ def test_rag_query_accuracy():
 ### 定性反馈
 
 **前端开发者反馈：**
-> "AI辅助让我能快速理解后端接口设计，减少了很多沟通成本。文档驱动的开发模式让整个项目的进展非常透明。"
+> "AI协作让我能快速理解后端接口设计，减少了很多沟通成本。文档驱动的开发模式让整个项目的进展非常透明。"
 
 **后端开发者反馈：**
 > "通过AI生成的代码框架，我可以专注于业务逻辑的实现。并行开发过程中的冲突明显减少了。"
@@ -323,4 +323,4 @@ def test_rag_query_accuracy():
 **详细内容：**
 - [项目背景与团队分工](chapter8/project-setup.md)
 - [树状文档与模块信息表实践](chapter8/doc-practice.md)
-- [AI辅助开发全流程示例](chapter8/development-flow.md)
+- [AI协作开发全流程示例](chapter8/development-flow.md)

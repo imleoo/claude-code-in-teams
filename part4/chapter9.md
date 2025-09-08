@@ -57,16 +57,16 @@ graph TD
 
 ## 团队协作亮点
 
-- **AI辅助的遗留代码分析**：利用AI阅读和理解旧的PHP和SQL代码，生成文档和迁移逻辑。
+- **AI协作的遗留代码分析**：利用AI阅读和理解旧的PHP和SQL代码，生成文档和迁移逻辑。
 - **文档驱动的重构**：先编写新系统的API和数据模型文档，再进行编码，确保团队对新架构有统一的认知。
 - **AI生成复杂数据查询**：利用AI将旧的、低效的MySQL查询，改写为针对ClickHouse优化的、高性能的OLAP查询。
-- **AI辅助的数据验证**：利用AI编写数据比对脚本，验证数据从MySQL到ClickHouse迁移后的一致性。
+- **AI协作的数据验证**：利用AI编写数据比对脚本，验证数据从MySQL到ClickHouse迁移后的一致性。
 
 ## 本章内容导航
 
 本章将按照重构项目的生命周期，详细展开以下内容：
 1.  **遗留代码的智能考古与文档生成**
-2.  **AI辅助的数据迁移策略与验证**
+2.  **AI协作的数据迁移策略与验证**
 3.  **高性能后端的重构与查询优化**
 4.  **现代前端的组件化重写**
 5.  **新旧系统并行与无缝切换**
@@ -79,7 +79,7 @@ graph TD
 
 **详细内容：**
 - [遗留代码的智能考古与文档生成](chapter9/legacy-code-analysis.md)
-- [AI辅助的数据迁移策略与验证](chapter9/data-migration.md)
+- [AI协作的数据迁移策略与验证](chapter9/data-migration.md)
 - [高性能后端的重构与查询优化](chapter9/backend-refactor.md)
 - [现代前端的组件化重写](chapter9/frontend-rewrite.md)
 - [新旧系统并行与无缝切换](chapter9/switch-over.md)

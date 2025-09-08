@@ -640,7 +640,7 @@ class CollaborationDashboard:
 - 问题快速响应
 
 **3. 智能化工具支持**
-- AI辅助冲突预测
+- AI协作冲突预测
 - 自动化测试集成
 - 持续监控和优化
 

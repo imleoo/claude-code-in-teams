@@ -49,7 +49,7 @@ start_work() {
 # 提交代码流程
 commit_work() {
     echo "📝 提交代码..."
-    claude-code review --auto # AI辅助代码审查
+    claude-code review --auto # AI协作代码审查
     npm test
     git add . && git commit -m "$1"
     git push origin HEAD
@@ -83,7 +83,7 @@ training_levels:
       - "理解风险控制机制"
     modules:
       - "Git Worktrees实践"
-      - "AI辅助代码审查"
+      - "AI协作代码审查"
 ```
 
 **个性化学习路径推荐:**

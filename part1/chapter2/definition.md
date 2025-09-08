@@ -25,7 +25,7 @@ graph TD
     end
 
     subgraph D [ ]
-        D1["文档驱动开发(DADD)"]
+        D1["文档AI驱动开发(DADD)"]
         D2["上下文工程"]
         D3["自动化与编排"]
     end

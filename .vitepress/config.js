@@ -7,7 +7,7 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },
-      { text: 'GitHub', link: 'https://github.com/your-username/team-vibe-coding-guide' }
+      { text: 'GitHub', link: 'https://github.com/imleoo/claude-code-in-teams' }
     ],
     sidebar: [
       {
@@ -165,7 +165,7 @@ export default defineConfig({
       }
     ],
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-username/team-vibe-coding-guide' }
+      { icon: 'github', link: 'https://github.com/imleoo/claude-code-in-teams' }
     ]
   }
 })

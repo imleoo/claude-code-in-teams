@@ -28,11 +28,11 @@
       "showLevel": true
     },
     "edit-link": {
-      "base": "https://github.com/imleoo/team-vibe-coding-guide/edit/main",
+      "base": "https://github.com/imleoo/claude-code-in-teams/edit/main",
       "label": "编辑此页"
     },
     "github": {
-      "url": "https://github.com/imleoo/team-vibe-coding-guide"
+      "url": "https://github.com/imleoo/claude-code-in-teams"
     },
     "sharing": {
       "facebook": false,

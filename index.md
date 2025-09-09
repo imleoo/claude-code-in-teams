@@ -36,8 +36,8 @@ features:
     title: 风险分级管理
     details: 系统化的风险评估框架，指导团队在不同场景下选择合适的AI参与策略
   - icon: 👥
-    title: 心理安全建设
-    details: 基于Google Project Aristotle研究，构建高效团队协作的心理安全机制
+    title: 团队 Vibe Coding
+    details: 基于文档驱动，实现高信任度、高流畅度的人机协作开发实践
 ---
 
 ## 为什么选择团队 Vibe Coding？
@@ -47,7 +47,7 @@ features:
 ### 🎯 核心理念
 
 - **文档驱动AI开发（DDAD）**：以结构化文档为AI协作协议的开发模式
-- **团队 Vibe Coding**：基于心理安全的AI协作开发  
+- **团队 Vibe Coding**：高信任度、高流畅度的人机协作状态  
 - **风险分级管理**：不同场景下的AI参与策略
 
 ### 📊 实际效果

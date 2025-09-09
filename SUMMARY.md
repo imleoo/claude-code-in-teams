@@ -9,7 +9,7 @@
   * [目标读者与阅读收益](part1/chapter1/audience.md)
   * [行业趋势与挑战](part1/chapter1/trends.md)
 * [第2章 核心概念解析](part1/chapter2.md)
-  * [什么是"团队 Vibe Coding"](part1/chapter2/definition.md)
+  * [重新定义"团队 Vibe Coding"](part1/chapter2/definition.md)
   * [场景适配与风险等级矩阵](part1/chapter2/risk-matrix.md)
   * [团队效能关键因素](part1/chapter2/team-effectiveness.md)
 

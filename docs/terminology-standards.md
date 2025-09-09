@@ -6,7 +6,7 @@
 |----------|----------|------|----------|
 | 文档驱动AI开发 | Document-Driven AI Development | 以结构化文档为AI协作协议的开发方法论 | 全书统一使用 |
 | DDAD | DDAD | Document-Driven AI Development的缩写 | 首次出现后可使用缩写 |
-| 团队Vibe Coding | Team Vibe Coding | 基于心理安全的AI协作开发实践 | 团队协作章节 |
+| 团队Vibe Coding | Team Vibe Coding | 一种高信任度、高流畅度的人机协作状态，以DDAD为基础，旨在加速高质量决策。 | 团队协作章节 |
 | 智能体化系统 | Agentic System | 具备自主规划、感知、行动能力的AI系统 | 技术实现章节 |
 | 上下文工程 | Context Engineering | 构建高质量信息架构的技术和方法 | AI交互章节 |
 | Claude Code | Claude Code | Anthropic开发的AI编程助手工具 | 工具相关章节 |

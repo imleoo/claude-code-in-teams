@@ -6,7 +6,7 @@ hero:
   text: "团队Vibe Coding协作革命"
   tagline: AI时代下的团队协作开发实践指南
   image:
-    src: /claude-code-in-teams/hero-image.svg
+    src: /hero-image.svg
     alt: 团队 Vibe Coding
   actions:
     - theme: brand

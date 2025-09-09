@@ -179,7 +179,25 @@ git worktree remove ../project-frontend
 git worktree prune  # 清理无效引用
 ```
 
-### 团队协作最佳实践
+### SuperClaude命令参考
+
+**快速测试命令**：
+```bash
+# 终端验证
+python3 -m SuperClaude --version
+
+# Claude Code测试
+/sc:brainstorm "test project"    # 交互式需求发现
+/sc:implement "auth system"     # 智能功能实现
+/sc:analyze README.md           # 代码质量分析
+```
+
+**核心工作流**：
+```bash
+/sc:brainstorm "项目概念" → /sc:implement "功能名称" → /sc:test
+```
+
+### DDAD治理框架与最佳实践
 
 ```bash
 # 为团队成员创建专用分支

@@ -18,11 +18,13 @@
 * [第3章 AI工具与开发环境搭建](part2/chapter3.md)
   * [主流AI编码工具对比](part2/chapter3/tools-comparison.md)
   * [文档工具体系与树状结构设计](part2/chapter3/doc-system.md)
+  * [SuperClaude安装与配置](part2/chapter3.md#superclaude安装与配置)
   * [MCP服务器与项目管理集成](part2/chapter3/mcp-integration.md)
 * [第4章 Claude Code核心操作](part2/chapter4.md)
   * [上下文控制与信息管理](part2/chapter4/context-control.md)
   * [文档驱动的AI交互流程](part2/chapter4/doc-driven-flow.md)
   * [实时协作与沟通机制](part2/chapter4/collaboration.md)
+  * [SuperClaude行为模式与智能协作](part2/chapter4/superclaude-modes.md)
 
 ## 第三部分：团队协作核心流程
 
@@ -78,4 +80,4 @@
   * [Prompt 模板集合](appendix/prompt-templates.md)
 * [附录B 企业开发规范 Prompt 集合](appendix/prompt-collection.md)
 * [附录C 协作评估工具与指标体系](appendix/assessment-tools.md)
-* [附录D 参考资料索引](appendix/references.md)
+* [附录D SuperClaude快速参考](appendix/superclaude-quickref.md)

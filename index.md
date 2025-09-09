@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "团队 Vibe Coding"
-  text: "开发指南"
+  name: "文档驱动AI开发"
+  text: "团队Vibe Coding协作革命"
   tagline: AI时代下的团队协作开发实践指南
   image:
     src: /hero-image.svg

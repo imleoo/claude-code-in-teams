@@ -204,7 +204,7 @@ docs/
 ### 持续学习资源
 
 #### 必读章节
-- [Part 2: DDAD理论基础](part2/chapter2.md)
+- [Part 2: DDAD理论基础](part1/chapter2.md)
 - [Part 3: Vibe Coding实践](part3/chapter5.md)
 - [Part 4: 真实案例研究](part4/chapter8.md)
 
@@ -251,7 +251,7 @@ docs/
 
 ### 推荐学习路径
 1. **理论基础** → [Part 1: AI协作革命](part1/chapter1.md)
-2. **方法掌握** → [Part 2: DDAD核心原理](part2/chapter2.md)  
+2. **方法掌握** → [Part 2: DDAD核心原理](part1/chapter2.md)  
 3. **实践技能** → [Part 3: Vibe Coding实施](part3/chapter5.md)
 4. **案例深化** → [Part 4: 真实项目案例](part4/chapter8.md)
 5. **未来展望** → [Part 5: 发展趋势](part5/chapter11.md)
@@ -260,7 +260,7 @@ docs/
 - 🚀 [立即开始实践](part3/chapter5.md)
 - 📋 [文档模板库](appendix/doc-templates.md)
 - 🤝 [团队协作指南](part3/chapter5.md)
-- ⚖️ [风险管理手册](part2/chapter2.md)
+- ⚖️ [风险管理手册](part1/chapter2.md)
 
 ## 🚀 在线阅读与部署
 

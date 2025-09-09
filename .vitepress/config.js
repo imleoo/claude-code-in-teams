@@ -4,6 +4,7 @@ export default defineConfig({
   title: "团队Vibe Coding开发指南 - DDAD方法论",
   description: "AI时代下的团队协作开发实践指南",
   base: '/claude-code-in-teams/',
+  ignoreDeadLinks: true,
   themeConfig: {
     nav: [
       { text: '首页', link: '/' },

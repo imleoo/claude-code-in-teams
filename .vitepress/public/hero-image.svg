@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="210mm" height="297mm" viewBox="0 0 210 297" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 科技蓝渐变背景 -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e2e8f0;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 主色调 -->
+    <linearGradient id="primaryGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3b82f6;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 辅助色 -->
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#059669;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#10b981;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- 柔和阴影 -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0.5" dy="0.5" stdDeviation="0.5" flood-color="#1e40af" flood-opacity="0.1"/>
+    </filter>
+    
+    <!-- 网格图案 -->
+    <pattern id="subtleGrid" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+      <path d="M 8 0 L 0 0 0 8" fill="none" stroke="#cbd5e1" stroke-width="0.15" opacity="0.4"/>
+    </pattern>
+    
+    <!-- 简洁线条 -->
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#94a3b8;stop-opacity:0.3" />
+      <stop offset="50%" style="stop-color:#64748b;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#94a3b8;stop-opacity:0.3" />
+    </linearGradient>
+  </defs>
+  
+  <!-- 背景 -->
+  <rect width="210" height="297" fill="url(#bgGradient)"/>
+  <rect width="210" height="297" fill="url(#subtleGrid)"/>
+  
+  <!-- 顶部装饰线 -->
+  <line x1="20" y1="25" x2="190" y2="25" stroke="url(#lineGradient)" stroke-width="0.3"/>
+  
+  <!-- 主标题 -->
+  <text x="105" y="60" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="url(#primaryGradient)" filter="url(#softShadow)">
+    文档驱动AI开发：
+  </text>
+  <text x="105" y="75" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="13" font-weight="600" fill="url(#primaryGradient)" filter="url(#softShadow)">
+    团队Vibe Coding协作革命
+  </text>
+  
+  <!-- 副标题 -->
+  <text x="105" y="88" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="5" fill="#475569" opacity="0.8">
+    Document-Driven AI Development Framework
+  </text>
+  
+  <!-- 中心图标 -->
+  <g transform="translate(105, 140)">
+    <!-- 外圆 -->
+    <circle cx="0" cy="0" r="18" fill="none" stroke="url(#primaryGradient)" stroke-width="1" opacity="0.8"/>
+    
+    <!-- 内圆 -->
+    <circle cx="0" cy="0" r="12" fill="none" stroke="url(#accentGradient)" stroke-width="0.8" opacity="0.7"/>
+    
+    <!-- 中心点 -->
+    <circle cx="0" cy="0" r="3" fill="url(#primaryGradient)"/>
+    
+    <!-- 简洁连接线 -->
+    <g stroke="#64748b" stroke-width="0.25" opacity="0.5">
+      <line x1="-12" y1="0" x2="12" y2="0"/>
+      <line x1="0" y1="-12" x2="0" y2="12"/>
+      <line x1="-8.5" y1="-8.5" x2="8.5" y2="8.5"/>
+      <line x1="-8.5" y1="8.5" x2="8.5" y2="-8.5"/>
+    </g>
+    
+    <!-- 四个节点 -->
+    <g fill="#64748b" opacity="0.6">
+      <circle cx="12" cy="0" r="1"/>
+      <circle cx="-12" cy="0" r="1"/>
+      <circle cx="0" cy="12" r="1"/>
+      <circle cx="0" cy="-12" r="1"/>
+    </g>
+  </g>
+  
+  <!-- 简洁流程图 -->
+  <g transform="translate(105, 200)">
+    <!-- 文档 -->
+    <rect x="-35" y="-6" width="20" height="12" rx="2" fill="none" stroke="url(#primaryGradient)" stroke-width="0.6"/>
+    <text x="-25" y="1" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="3.5" fill="url(#primaryGradient)">文档</text>
+    
+    <!-- AI -->
+    <circle cx="0" cy="0" r="8" fill="none" stroke="url(#accentGradient)" stroke-width="0.6"/>
+    <text x="0" y="1" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="3.5" fill="url(#accentGradient)">AI</text>
+    
+    <!-- 团队 -->
+    <rect x="15" y="-6" width="20" height="12" rx="2" fill="none" stroke="url(#primaryGradient)" stroke-width="0.6"/>
+    <text x="25" y="1" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="3.5" fill="url(#primaryGradient)">团队</text>
+    
+    <!-- 连接线 -->
+    <g stroke="#64748b" stroke-width="0.3" opacity="0.5">
+      <line x1="-15" y1="0" x2="-8" y2="0"/>
+      <line x1="8" y1="0" x2="15" y2="0"/>
+    </g>
+  </g>
+  
+  <!-- 核心特点 -->
+  <g transform="translate(105, 240)">
+    <g font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="3.5" fill="#475569">
+      <text x="-30" y="0" text-anchor="middle">• 文档驱动</text>
+      <text x="0" y="0" text-anchor="middle">• AI增强</text>
+      <text x="30" y="0" text-anchor="middle">• 协作效率</text>
+    </g>
+  </g>
+  
+  <!-- 底部信息 -->
+  <text x="105" y="280" text-anchor="middle" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="4" fill="#64748b" opacity="0.7">
+    DDAD Framework • Team Collaboration • AI-Powered
+  </text>
+  
+  <!-- 简洁边框 -->
+  <rect x="15" y="15" width="180" height="267" fill="none" stroke="url(#lineGradient)" stroke-width="0.2" rx="3"/>
+  
+  <!-- 角落装饰 -->
+  <g fill="url(#primaryGradient)" opacity="0.4">
+    <circle cx="25" cy="25" r="1"/>
+    <circle cx="185" cy="25" r="1"/>
+    <circle cx="25" cy="272" r="1"/>
+    <circle cx="185" cy="272" r="1"/>
+  </g>
+</svg>

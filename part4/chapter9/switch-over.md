@@ -40,7 +40,7 @@ graph TD
 >
 > 1.  默认将所有请求代理到旧的PHP系统（地址：`http://localhost:8080`）。
 > 2.  但是，将所有路径以 `/api/v1/` 开头的请求，代理到我们新的FastAPI后端（地址：`http://localhost:8000`）。
-> 3.  同时，将所有对根路径 `/` 的访问（即仪表盘首页），也代理到新的Vue.js前端（地址：`http://localhost:5173`）。
+> 3.  同时，将所有对根路径 `/` 的访问（即仪表盘首页），也代理到新的Vue.js前端（地址：`http://localhost:5173/claude-code-in-teams/`）。
 > 4.  需要正确处理WebSocket连接和HTTP头信息的转发。
 
 AI生成的Nginx配置，不仅正确设置了`proxy_pass`，还包含了`proxy_set_header`等最佳实践，为平滑切换提供了技术基础。

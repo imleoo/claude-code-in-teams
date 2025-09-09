@@ -18,7 +18,7 @@ fi
 
 # 启动开发服务器
 echo "🌟 启动 VitePress 开发服务器..."
-echo "📖 访问地址: http://localhost:5173"
+echo "📖 访问地址: http://localhost:5173/claude-code-in-teams/"
 echo "⏹️  按 Ctrl+C 停止服务器"
 echo ""
 

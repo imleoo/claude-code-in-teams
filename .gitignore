@@ -1,16 +1,88 @@
-# GitBook build output
+# =============================================================================
+# 团队Vibe Coding开发指南 - Git忽略配置
+# =============================================================================
+
+# 📚 构建输出 (Build outputs)
+# =============================================================================
 _book/
+.vitepress/dist/
+.vitepress/cache/
+.vitepress/.temp/
 *.pdf
 *.epub
 *.mobi
 
-# Node.js
+# 🚀 Node.js 相关
+# =============================================================================
 node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# OS generated files
+# 📊 测试覆盖率和报告
+# =============================================================================
+coverage/
+.nyc_output/
+*.lcov
+reports/
+test-results/
+
+# 🏗️ 构建工具缓存
+# =============================================================================
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+.vuepress/dist/
+.serverless/
+.fusebox/
+.dynamodb/
+
+# 🔧 开发工具和环境
+# =============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 📝 编辑器配置和缓存
+# =============================================================================
+# VS Code
+.vscode/
+*.code-workspace
+.vscode-test/
+
+# IntelliJ IDEA / WebStorm
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Sublime Text
+*.sublime-workspace
+*.sublime-project
+
+# Vim / Neovim
+*.swp
+*.swo
+*~
+.vim/
+
+# Emacs
+*~
+\#*\#
+.#*
+
+# Eclipse
+.metadata/
+.project
+.settings/
+.classpath
+
+# macOS
 .DS_Store
 .DS_Store?
 ._*
@@ -19,26 +91,142 @@ yarn-error.log*
 ehthumbs.db
 Thumbs.db
 
-# Editor directories and files
-.vscode/
-.idea/
-*.swp
-*.swo
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
 *~
+.fuse_hidden*
+.directory
+.Trash-*
 
-# Logs
-logs
+# 🐍 Python (如果未来添加Python脚本)
+# =============================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 🐘 数据库和缓存文件
+# =============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+
+# 🎨 图片和资产缓存
+# =============================================================================
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+*.rej
+
+# 📁 日志文件
+# =============================================================================
+logs/
 *.log
+*.log.*
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# 🔍 调试和临时文件
+# =============================================================================
+debug.log
+error.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
-# Coverage directory used by tools like istanbul
-coverage/
+# 🎯 特定工具排除
+# =============================================================================
+# GitBook legacy
+_book/
 
-# Temporary folders
-tmp/
-temp/
+# GitHub Pages
+_site/
+
+# Vercel
+.vercel
+
+# Netlify
+.netlify
+
+# AWS
+.aws/
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# =============================================================================
+# 项目特定排除
+# =============================================================================
+
+# Claude AI 相关
+.claude/
+.codebuddy/
+.serena/
+
+# 临时工作文件
+.temp/
+.tmp/
+
+# 个人笔记和草稿
+notes/
+drafts/
+scratch/
+
+# 大型二进制文件
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+
+# 证书和密钥
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# =============================================================================
+# 保持版本控制的重要文件
+# =============================================================================
+
+# 不要忽略这些文件：
+# - package.json (依赖管理)
+# - package-lock.json (精确版本锁定)
+# - .github/workflows/ (CI/CD配置)
+# - .vitepress/config.js (VitePress配置)
+# - .gitignore (本文件)
+# - README.md (项目说明)
+# - 所有 .md 文档文件

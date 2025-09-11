@@ -2,7 +2,7 @@
 
 ## 第一部分：开篇与核心概念
 
-* [前言](README.md)
+* [前言](readme.md)
 * [第1章 前言——为什么需要团队 Vibe Coding](part1/chapter1.md)
   * [写作背景与行业变革](part1/chapter1/background.md)
   * [文档驱动AI开发（DDAD）理念导入](part1/chapter1/ddad.md)

@@ -15,7 +15,7 @@ export default defineConfig({
         text: '第一部分：开篇与核心概念',
         collapsed: false,
         items: [
-          { text: '前言', link: '/README' },
+          { text: '前言', link: '/readme' },
           {
             text: '第1章 前言——为什么需要团队 Vibe Coding',
             link: '/part1/chapter1.md',

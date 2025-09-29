@@ -4,21 +4,23 @@
 > 
 > "从代码补全到智能体(Agent)伙伴：DDAD引领的协作范式革命"
 
-## 🎯 核心理念：文档驱动AI开发(DDAD)
+## 🎯 核心理念：从规范驱动(Spec-Driven)到文档驱动(DDAD)
+
+**规范驱动开发（Spec-Driven Development）** 是业界领先的开发思想，强调在编码前编写详尽、清晰、可执行的规范（Spec）。这一理念在AI时代演化为我们的核心方法论：**DDAD（Document-Driven AI Development，文档驱动AI开发）**。
 
 ### 什么是DDAD？
 
-**DDAD（Document-Driven AI Development，文档驱动AI开发）** 是专为AI协作时代设计的革命性开发方法论。它解决了这个时代最关键的问题：
+DDAD继承并扩展了规范驱动思想，专为AI协作时代设计。它解决了这个时代最关键的问题：
 
 > **当AI成为开发团队的一员时，我们如何确保它能准确理解人类意图并高效协作？**
 
 ### DDAD的三大核心原则
 
-#### 1️⃣ 文档即接口：人机协作的协议
+#### 1️⃣ 规范即接口 (Spec as Interface)：人机协作的协议
 ```markdown
-🔑 文档不再是给人看的说明书，而是AI的执行指令
-🔑 结构化知识成为人类与AI的"协作协议"  
-🔑 项目规范转化为AI可理解的约束条件
+🔑 规范（Spec）是AI的执行指令，而非可有可无的文档
+🔑 结构化的规范成为人类与AI之间精确的"协作契约"
+🔑 所有项目需求和约束都被翻译成AI可理解的语言
 ```
 
 #### 2️⃣ 知识即代码：可执行的团队记忆
@@ -46,11 +48,11 @@
 
 ## 🚀 实践框架：构建人机协作的团队文化
 
-### 关于“Vibe Coding”的重新定义
+### Vibe Coding：由规范驱动的高效协作 (Spec-Driven Vibe Coding)
 
-“Vibe Coding”或“感觉编程”一词在业界存在争议，因为它可能被误解为缺乏工程严谨性的随意编码。然而，我们在此对其进行 **重新定义**，并将其作为DDAD框架下的特定文化实践。
+我们采纳并扩展了 **“规范驱动下的Vibe Coding” (Spec-Driven Vibe Coding)** 理念。它并非凭感觉随意编码，而是指在DDAD坚实的规范文档基础上，达成的一种 **高信任度、高流畅度的人机协作状态**。
 
-在我们看来，**Vibe Coding** 不是凭感觉编程，而是指一种 **高信任度、高流畅度的协作状态**。它建立在DDAD坚实的文档化基础之上，旨在达成以下目标：
+当一份清晰、无歧义的规范（Spec）成为团队共识后，开发的重点从“如何实现”转向“为何创造”。这种状态旨在达成以下目标：
 
 - **心理安全 (Psychological Safety)**：当文档成为清晰的协作协议后，团队成员（包括AI）能够放心地进行实验和创新，因为“对错”有据可依，失败的尝试会成为完善文档的宝贵数据，而非个人责备的来源。
 - **快速工程 (Rapid Engineering)**：AI的引入将开发周期从数周缩短至数天甚至数小时。瓶颈不再是编码，而是 **决策速度**。Vibe Coding代表了在这种高速迭代中，团队凭借深度的客户共情和DDAD提供的结构化知识，快速做出高质量产品决策的能力。
@@ -104,11 +106,11 @@ docs/
     └── lessons.md       # 经验教训
 ```
 
-#### 2. AI协作工作流模板
+#### 2. AI协作工作流模板（Spec示例）
 ```markdown
 # 任务：用户认证模块重构
 
-## AI执行规范
+## AI执行规范 (Spec)
 ### 技术约束
 - 框架：Spring Boot 3.x + Spring Security
 - 认证：JWT Token + Refresh Token
@@ -246,6 +248,17 @@ docs/
 4. **记录分享**：将经验转化为团队知识库
 
 ---
+
+## 🙏 思想来源
+
+本书提出的DDAD方法论深受业界关于 **规范驱动开发 (Spec-Driven Development)** 前沿思想的启发。我们整合并扩展了这些理念，使其适应AI时代的团队协作模式。
+
+特别感谢以下资源提供的灵感：
+- [mosofsky/spec-then-code](https://github.com/mosofsky/spec-then-code)
+- [Spec-Driven Vibe Coding by Vivek Haldar](https://vivekhaldar.com/articles/spec-driven-vibe-coding/)
+- [Spec-Coding 规范编码](https://mcpmarket.com/zh/server/spec-coding)
+
+DDAD正是在这些思想的基础上，针对人机协作的特殊挑战所做的进一步探索和实践。
 
 ## 📖 阅读指南
 

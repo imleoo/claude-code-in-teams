@@ -1,4 +1,4 @@
-# 第1章 前言——为什么需要团队 Vibe Coding
+# 第1章 前言——为什么需要规范驱动的 Vibe Coding
 
 > "范式转变：从'指令式工具'到'智能体伙伴'——核心在于思维模式的跃迁。你需要将 Claude Code 视为一个能够自主规划、执行并进行反思的初级合伙人，而非一个被动的代码生成器。" —— 吴恩达 & Elie Schoppik
 
@@ -43,9 +43,9 @@ AI编码工具的普及正在重塑软件开发的生态系统。从GitHub Copil
 - 传统团队开发模式面临的挑战
 - 智能体编码对团队协作的重构价值
 
-### 2. 文档驱动AI开发（DDAD）理念导入
+### 2. 从规范驱动到文档驱动（DDAD）
 
-在AI协作开发的新时代，"文档先行"比"代码驱动"更能发挥AI的协作优势。DDAD（Document-Driven AI Development，文档驱动AI开发）不仅是一种开发方法，更是一种思维模式的转变。
+DDAD（Document-Driven AI Development，文档驱动AI开发）继承并扩展了“规范驱动开发”（Spec-Driven Development）的核心思想。在AI协作的新时代，“规范先行”不仅是最佳实践，更是人机高效协作的协议基础。
 
 **核心原则：**
 - **完整性**：文档应涵盖项目的全生命周期
@@ -65,7 +65,7 @@ AI编码工具的普及正在重塑软件开发的生态系统。从GitHub Copil
 阅读完本章后，您将能够：
 
 1. 理解团队 Vibe Coding 产生的历史背景
-2. 掌握文档驱动开发的核心理念
+2. 掌握规范驱动开发（Spec-Driven）的核心理念
 3. 明确自己在AI协作开发中的角色定位
 4. 认识当前行业面临的主要挑战和机遇
 
@@ -76,6 +76,6 @@ AI编码工具的普及正在重塑软件开发的生态系统。从GitHub Copil
 ## 延伸阅读
 
 - [写作背景与行业变革](chapter1/background.md)
-- [文档驱动AI开发（DDAD）理念导入](chapter1/ddad.md)
+- [从规范驱动到文档驱动（DDAD）](chapter1/ddad.md)
 - [目标读者与阅读收益](chapter1/audience.md)
 - [行业趋势与挑战](chapter1/trends.md)

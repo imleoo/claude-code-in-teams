@@ -18,7 +18,7 @@
 * [第3章 AI工具与开发环境搭建](part2/chapter3.md)
   * [主流AI编码工具对比](part2/chapter3/tools-comparison.md)
   * [文档工具体系与树状结构设计](part2/chapter3/doc-system.md)
-  * [SuperClaude安装与配置](part2/chapter3.md#superclaude安装与配置)
+  * [SuperClaude安装与配置](part2/chapter3/superclaude-setup.md)
   * [MCP服务器与项目管理集成](part2/chapter3/mcp-integration.md)
 * [第4章 Claude Code核心操作](part2/chapter4.md)
   * [上下文控制与信息管理](part2/chapter4/context-control.md)

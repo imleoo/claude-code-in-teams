@@ -1,668 +1,301 @@
-# 第6章 多会话并行开发
+# 第6章 产品与架构设计
 
-> "真正的团队协作不是简单的任务分工，而是在保持独立性的同时实现高效协同。Git Worktrees + AI多会话并行开发，让团队协作进入新的境界。"
+> "好的设计是成功的一半。AI 不仅能帮助我们更快地设计,更能帮助我们设计得更好。"
 
 ## 章节概述
 
-本章将深入探讨多会话并行开发的核心技术和实践方法。通过Git Worktrees多会话管理、跨会话文档同步机制，以及AI驱动的协作诊断，帮助团队实现真正的并行高效开发。
+在 DDAD 方法论中,产品与架构设计阶段是将需求转化为可执行方案的关键环节。本章介绍如何利用 AI 辅助进行产品设计与系统架构设计,让设计过程更加高效、全面和可追溯。
 
-## 并行开发架构
+## 设计阶段的核心价值
+
+在传统开发流程中,产品设计和架构设计往往由少数资深人员主导,新手很难参与其中。DDAD 方法论通过引入 AI 辅助,使设计阶段更加:
+
+1. **民主化**: 团队成员都可以与 AI 协作进行设计探索
+2. **迭代化**: 快速生成多个设计方案进行对比评估
+3. **文档化**: 设计决策和演进过程自动形成文档
+4. **验证化**: AI 可以帮助发现设计中的潜在问题
+
+## 设计流程架构
 
 ```mermaid
 graph TB
-    subgraph "主仓库"
-        A1[main分支]
-        A2[develop分支]
-        A3[release分支]
+    subgraph "需求阶段"
+        A1[需求文档]
+        A2[用户故事]
     end
-    
-    subgraph "并行工作树"
-        B1[feature-1 worktree]
-        B2[feature-2 worktree]
-        B3[hotfix worktree]
-        B4[docs worktree]
+
+    subgraph "产品设计"
+        B1[功能规划]
+        B2[用户体验设计]
+        B3[产品路线图]
     end
-    
-    subgraph "AI会话管理"
-        C1[会话1: 前端开发]
-        C2[会话2: 后端API]
-        C3[会话3: 数据库设计]
-        C4[会话4: 文档更新]
+
+    subgraph "架构设计"
+        C1[系统架构]
+        C2[技术选型]
+        C3[UI/UX设计]
     end
-    
+
+    subgraph "实施准备"
+        D1[开发任务]
+        D2[技术文档]
+    end
+
     A1 --> B1
-    A2 --> B2
-    A1 --> B3
-    A2 --> B4
-    
-    B1 --> C1
-    B2 --> C2
-    B3 --> C3
-    B4 --> C4
+    A2 --> B1
+    B1 --> B2
+    B2 --> B3
+    B3 --> C1
+    C1 --> C2
+    C2 --> C3
+    C3 --> D1
+    C3 --> D2
 ```
 
 ## 主要内容
 
-### 1. Git Worktrees 多会话管理
+### 1. AI驱动的产品设计与管理
 
-掌握Git Worktrees的高级用法，实现多个功能分支的并行开发。
+使用 AI 辅助产品功能规划、用户体验设计和产品路线图制定。
 
-**核心技能：**
-- Worktrees的创建和管理
-- 分支策略的设计
-- 冲突预防和解决
-- 工作流程的优化
+**核心能力:**
+- AI 辅助的竞品分析和市场调研
+- 基于用户需求的功能优先级排序
+- 交互设计和用户流程优化
+- 产品迭代规划和版本管理
 
-### 2. 跨会话文档同步机制
+### 2. AI辅助的系统架构与UI/UX设计
 
-建立高效的文档同步机制，确保团队成员之间的信息一致性。
+利用 AI 进行系统架构设计、技术选型和界面设计。
 
-**同步要素：**
-- 实时文档更新
-- 版本控制集成
-- 冲突检测和解决
-- 自动化同步流程
+**设计要素:**
+- 系统架构方案设计与评估
+- 技术栈选型和组件设计
+- 数据库schema设计
+- UI/UX界面原型设计
+- 设计决策文档化
 
-### 3. AI驱动的协作诊断
+## AI 设计辅助工具链
 
-利用AI技术诊断协作过程中的问题，提供优化建议。
+### 产品设计工具
 
-**诊断维度：**
-- 代码冲突预测
-- 工作负载均衡
-- 进度同步状态
-- 质量风险评估
-
-## Git Worktrees 实践指南
-
-### 基础操作
-
-**1. 创建工作树**
+**1. 需求分析工具**
 ```bash
-# 创建新的功能分支工作树
-git worktree add ../project-feature-auth feature/user-auth
-
-# 创建基于现有分支的工作树
-git worktree add ../project-hotfix hotfix/critical-bug
-
-# 创建新分支的工作树
-git worktree add -b feature/new-api ../project-api develop
+# 使用 Claude 进行需求分析
+/analyze-requirements @requirements.md --output product-spec.md
 ```
 
-**2. 工作树管理**
-```bash
-# 查看所有工作树
-git worktree list
-
-# 删除工作树
-git worktree remove ../project-feature-auth
-
-# 修剪无效的工作树引用
-git worktree prune
-```
-
-**3. 高级配置**
-```bash
-# 配置工作树默认位置
-git config worktree.guessRemote true
-
-# 设置工作树钩子
-git config core.hooksPath .githooks
-```
-
-### 团队协作策略
-
-**1. 分支命名规范**
-```
-功能分支：feature/[功能名称]
-修复分支：hotfix/[问题描述]
-发布分支：release/[版本号]
-文档分支：docs/[文档类型]
-
-示例：
-- feature/user-authentication
-- hotfix/payment-gateway-error
-- release/v2.1.0
-- docs/api-documentation
-```
-
-**2. 工作树目录结构**
-```
-project-root/
-├── main/                 # 主工作树
-├── feature-auth/         # 用户认证功能
-├── feature-payment/      # 支付功能
-├── hotfix-security/      # 安全修复
-├── docs-update/          # 文档更新
-└── release-v2.0/         # 发布准备
-```
-
-**3. 并行开发工作流**
-```mermaid
-sequenceDiagram
-    participant Dev1 as 开发者1
-    participant Dev2 as 开发者2
-    participant Repo as 代码仓库
-    participant AI as AI助手
-    
-    Dev1->>Repo: 创建feature/auth工作树
-    Dev2->>Repo: 创建feature/payment工作树
-    
-    Dev1->>AI: 开始用户认证开发
-    Dev2->>AI: 开始支付功能开发
-    
-    AI->>Dev1: 生成认证相关代码
-    AI->>Dev2: 生成支付相关代码
-    
-    Dev1->>Repo: 提交认证功能
-    Dev2->>Repo: 提交支付功能
-    
-    Repo->>AI: 检测潜在冲突
-    AI->>Dev1: 冲突预警和解决建议
-    AI->>Dev2: 冲突预警和解决建议
-```
-
-## 跨会话文档同步
-
-### 文档同步架构
-
-**1. 同步机制设计**
-```python
-class DocumentSyncManager:
-    def __init__(self, project_root):
-        self.project_root = project_root
-        self.sync_config = self.load_sync_config()
-        self.watchers = {}
-    
-    def setup_sync(self, worktree_path, session_id):
-        """为工作树设置文档同步"""
-        watcher = FileSystemWatcher(worktree_path)
-        watcher.on_change = lambda path: self.sync_document(path, session_id)
-        self.watchers[session_id] = watcher
-        return watcher
-    
-    def sync_document(self, file_path, source_session):
-        """同步文档到其他会话"""
-        if self.is_shared_document(file_path):
-            for session_id, watcher in self.watchers.items():
-                if session_id != source_session:
-                    self.update_document(file_path, session_id)
-    
-    def is_shared_document(self, file_path):
-        """判断是否为共享文档"""
-        shared_patterns = [
-            "README.md",
-            "CLAUDE.md",
-            "docs/**/*.md",
-            "*.json",
-            "package.json"
-        ]
-        return any(fnmatch.fnmatch(file_path, pattern) 
-                  for pattern in shared_patterns)
-```
-
-**2. 实时同步配置**
+**2. 用户故事生成**
 ```yaml
-# .sync-config.yml
-sync_rules:
-  shared_files:
-    - "README.md"
-    - "CLAUDE.md"
-    - "docs/**/*.md"
-    - "package.json"
-    - "*.config.js"
-  
-  sync_frequency: "real-time"  # real-time, 5min, 15min
-  
-  conflict_resolution: "manual"  # auto, manual, latest-wins
-  
-  notification:
-    enabled: true
-    channels: ["slack", "email"]
-    
-  backup:
-    enabled: true
-    retention_days: 30
+# user-stories.yml
+epic: "用户认证系统"
+ai_generation:
+  context: "电商平台需要安全的用户认证"
+  user_types: ["买家", "卖家", "管理员"]
+  features: ["注册", "登录", "密码找回", "两步验证"]
 ```
 
-### 冲突检测与解决
+### 架构设计工具
 
-**1. 智能冲突检测**
+**1. 系统架构图生成**
 ```python
-class ConflictDetector:
+# architecture_generator.py
+from claude_code import ArchitectureDesigner
+
+designer = ArchitectureDesigner()
+
+# 基于需求生成系统架构
+architecture = designer.generate_architecture(
+    requirements="requirements.md",
+    constraints={
+        "scalability": "high",
+        "budget": "medium",
+        "team_size": 6
+    }
+)
+
+# 生成架构文档和图表
+architecture.export_mermaid("docs/architecture.md")
+architecture.export_c4_model("docs/c4-model/")
+```
+
+**2. 技术选型决策**
+```python
+class TechStackSelector:
     def __init__(self, ai_client):
         self.ai_client = ai_client
-    
-    def detect_conflicts(self, file_changes):
-        """检测文件变更中的潜在冲突"""
-        conflicts = []
-        
-        for file_path, changes in file_changes.items():
-            if len(changes) > 1:  # 多人同时修改
-                conflict_analysis = self.analyze_conflict(file_path, changes)
-                if conflict_analysis.has_conflict:
-                    conflicts.append(conflict_analysis)
-        
-        return conflicts
-    
-    def analyze_conflict(self, file_path, changes):
-        """分析具体的冲突情况"""
+
+    def select_tech_stack(self, requirements, constraints):
+        """AI辅助技术选型"""
         prompt = f"""
-        分析以下文件的并发修改是否存在冲突：
-        
-        文件：{file_path}
-        修改记录：
-        {json.dumps(changes, indent=2)}
-        
-        请分析：
-        1. 是否存在真实冲突
-        2. 冲突的严重程度
-        3. 建议的解决方案
+        基于以下需求和约束,推荐合适的技术栈:
+
+        需求: {requirements}
+        约束: {constraints}
+
+        请提供:
+        1. 前端框架推荐及理由
+        2. 后端框架推荐及理由
+        3. 数据库选型及理由
+        4. 第三方服务建议
+        5. 部署方案建议
         """
-        
+
         return self.ai_client.analyze(prompt)
 ```
 
-**2. 自动化冲突解决**
-```python
-class ConflictResolver:
-    def __init__(self, ai_client):
-        self.ai_client = ai_client
-    
-    def resolve_conflict(self, conflict_info):
-        """自动解决冲突"""
-        if conflict_info.can_auto_resolve:
-            return self.auto_merge(conflict_info)
-        else:
-            return self.suggest_manual_resolution(conflict_info)
-    
-    def auto_merge(self, conflict_info):
-        """自动合并非冲突性修改"""
-        merge_strategy = self.determine_merge_strategy(conflict_info)
-        
-        if merge_strategy == "three_way_merge":
-            return self.three_way_merge(conflict_info)
-        elif merge_strategy == "semantic_merge":
-            return self.semantic_merge(conflict_info)
-        
-    def semantic_merge(self, conflict_info):
-        """基于语义的智能合并"""
-        prompt = f"""
-        请帮助合并以下代码冲突，保持功能完整性：
-        
-        基础版本：
-        {conflict_info.base_content}
-        
-        版本A修改：
-        {conflict_info.version_a}
-        
-        版本B修改：
-        {conflict_info.version_b}
-        
-        请提供合并后的代码，确保：
-        1. 保留所有功能
-        2. 代码风格一致
-        3. 没有语法错误
-        """
-        
-        return self.ai_client.generate(prompt)
+## 设计文档标准化
+
+### 产品设计文档 (PRD)
+
+```markdown
+# 产品需求文档 - 用户认证系统
+
+## 产品概述
+[AI生成的产品概述]
+
+## 目标用户
+- 主要用户: 电商平台买家
+- 次要用户: 卖家和管理员
+
+## 核心功能
+### 1. 用户注册
+- 邮箱注册
+- 手机号注册
+- 第三方登录 (微信、支付宝)
+
+### 2. 用户登录
+- 账号密码登录
+- 短信验证码登录
+- 两步验证
+
+### 3. 密码管理
+- 密码找回
+- 密码修改
+- 安全设置
+
+## 用户流程
+[Mermaid流程图]
+
+## UI/UX设计
+[设计稿链接和说明]
+
+## 技术要求
+[技术约束和性能要求]
 ```
 
-## AI驱动的协作诊断
+### 架构设计文档 (ADD)
 
-### 协作状态监控
+```markdown
+# 架构设计文档 - 用户认证系统
 
-**1. 实时状态收集**
-```python
-class CollaborationMonitor:
-    def __init__(self):
-        self.metrics_collector = MetricsCollector()
-        self.ai_analyzer = AIAnalyzer()
-    
-    def collect_collaboration_metrics(self):
-        """收集协作指标"""
-        return {
-            'commit_frequency': self.get_commit_frequency(),
-            'branch_divergence': self.get_branch_divergence(),
-            'file_conflict_rate': self.get_conflict_rate(),
-            'code_review_time': self.get_review_time(),
-            'communication_frequency': self.get_communication_metrics()
-        }
-    
-    def get_commit_frequency(self):
-        """获取提交频率"""
-        return {
-            'daily_commits': self.count_daily_commits(),
-            'commit_size_distribution': self.analyze_commit_sizes(),
-            'active_contributors': self.count_active_contributors()
-        }
-    
-    def get_branch_divergence(self):
-        """分析分支分歧程度"""
-        branches = self.get_active_branches()
-        divergence_data = {}
-        
-        for branch in branches:
-            divergence_data[branch] = {
-                'commits_ahead': self.count_commits_ahead(branch),
-                'commits_behind': self.count_commits_behind(branch),
-                'file_changes': self.count_file_changes(branch)
-            }
-        
-        return divergence_data
+## 系统架构
+[C4 Model 或分层架构图]
+
+## 技术选型
+### 前端
+- 框架: React 18
+- 状态管理: Redux Toolkit
+- UI组件库: Ant Design
+
+### 后端
+- 框架: Node.js + Express
+- 认证: JWT + Redis
+- 数据库: PostgreSQL + Redis
+
+## 接口设计
+### RESTful API
+```
+POST /api/auth/register
+POST /api/auth/login
+POST /api/auth/logout
+POST /api/auth/refresh-token
 ```
 
-**2. 智能诊断分析**
-```python
-class CollaborationDiagnostics:
-    def __init__(self, ai_client):
-        self.ai_client = ai_client
-    
-    def diagnose_collaboration_health(self, metrics):
-        """诊断协作健康状况"""
-        diagnosis_prompt = f"""
-        基于以下协作指标，诊断团队协作状况：
-        
-        指标数据：
-        {json.dumps(metrics, indent=2)}
-        
-        请分析：
-        1. 协作效率评估
-        2. 潜在问题识别
-        3. 改进建议
-        4. 风险预警
-        """
-        
-        return self.ai_client.analyze(diagnosis_prompt)
-    
-    def predict_conflicts(self, current_state):
-        """预测潜在冲突"""
-        prediction_prompt = f"""
-        基于当前开发状态，预测可能的冲突：
-        
-        当前状态：
-        {json.dumps(current_state, indent=2)}
-        
-        请预测：
-        1. 可能的冲突点
-        2. 冲突发生概率
-        3. 预防措施建议
-        """
-        
-        return self.ai_client.predict(prediction_prompt)
-```
+## 数据库设计
+[Schema设计和ER图]
 
-### 性能优化建议
+## 安全设计
+- 密码加密: bcrypt
+- Token管理: JWT + Refresh Token
+- API限流: Redis
+- HTTPS: Let's Encrypt
 
-**1. 工作负载均衡**
-```python
-class WorkloadBalancer:
-    def __init__(self, ai_client):
-        self.ai_client = ai_client
-    
-    def analyze_workload_distribution(self, team_metrics):
-        """分析工作负载分布"""
-        analysis = self.ai_client.analyze(f"""
-        分析团队工作负载分布：
-        
-        团队指标：
-        {json.dumps(team_metrics, indent=2)}
-        
-        请提供：
-        1. 负载均衡评估
-        2. 瓶颈识别
-        3. 重新分配建议
-        """)
-        
-        return analysis
-    
-    def suggest_task_reallocation(self, current_allocation, team_capacity):
-        """建议任务重新分配"""
-        suggestion = self.ai_client.generate(f"""
-        基于团队能力和当前分配，建议任务重新分配：
-        
-        当前分配：{current_allocation}
-        团队能力：{team_capacity}
-        
-        请提供具体的重新分配方案。
-        """)
-        
-        return suggestion
-```
-
-**2. 流程优化建议**
-```python
-class ProcessOptimizer:
-    def __init__(self, ai_client):
-        self.ai_client = ai_client
-    
-    def optimize_workflow(self, workflow_data):
-        """优化工作流程"""
-        optimization = self.ai_client.optimize(f"""
-        优化以下工作流程：
-        
-        当前流程：
-        {json.dumps(workflow_data, indent=2)}
-        
-        请提供：
-        1. 流程瓶颈分析
-        2. 优化建议
-        3. 预期效果评估
-        """)
-        
-        return optimization
+## 部署架构
+[部署拓扑图]
 ```
 
 ## 实践案例
 
-### 案例：电商平台并行开发
+### 案例:电商平台产品设计
 
-**1. 项目背景**
-- 团队规模：6人（3前端 + 2后端 + 1全栈）
-- 开发周期：4周
-- 主要功能：用户系统、商品管理、订单处理、支付集成
+**背景:**
+- 新建电商平台,需要从零开始设计产品和架构
+- 团队规模: 8人 (3前端 + 3后端 + 1PM + 1设计师)
+- 时间限制: 6周完成MVP
 
-**2. 工作树配置**
-```bash
-# 主项目目录
-cd ecommerce-platform
+**产品设计过程:**
 
-# 创建各功能模块的工作树
-git worktree add ../ecommerce-user-auth feature/user-auth
-git worktree add ../ecommerce-product feature/product-management
-git worktree add ../ecommerce-order feature/order-processing
-git worktree add ../ecommerce-payment feature/payment-integration
-git worktree add ../ecommerce-admin feature/admin-panel
-git worktree add ../ecommerce-docs docs/update
-```
+1. **需求分析** (Week 1)
+   - 使用 AI 分析竞品功能
+   - 生成用户故事地图
+   - 确定 MVP 范围
 
-**3. AI会话分配**
-```yaml
-# ai-session-config.yml
-sessions:
-  session-1:
-    name: "用户认证开发"
-    worktree: "../ecommerce-user-auth"
-    developer: "张三"
-    focus: "前端用户界面 + 后端认证API"
-    
-  session-2:
-    name: "商品管理系统"
-    worktree: "../ecommerce-product"
-    developer: "李四"
-    focus: "商品CRUD + 图片上传"
-    
-  session-3:
-    name: "订单处理流程"
-    worktree: "../ecommerce-order"
-    developer: "王五"
-    focus: "订单状态管理 + 库存扣减"
-    
-  session-4:
-    name: "支付集成"
-    worktree: "../ecommerce-payment"
-    developer: "赵六"
-    focus: "第三方支付 + 回调处理"
-```
+2. **功能设计** (Week 2)
+   - AI 辅助生成产品功能列表
+   - 优先级排序
+   - 绘制用户流程图
 
-**4. 协作效果**
-```
-协作指标对比：
+3. **原型设计** (Week 2-3)
+   - AI 生成UI布局建议
+   - 交互设计评审
+   - 设计稿确认
 
-传统开发模式：
-- 代码冲突频率：15次/周
-- 集成测试时间：2天
-- 功能交付延期：30%
-- 团队沟通成本：40%工作时间
+**架构设计过程:**
 
-并行开发模式：
-- 代码冲突频率：3次/周 (-80%)
-- 集成测试时间：0.5天 (-75%)
-- 功能交付延期：5% (-83%)
-- 团队沟通成本：15%工作时间 (-63%)
-```
+1. **系统架构设计** (Week 2)
+   - AI 推荐技术栈
+   - 设计微服务架构
+   - 确定技术方案
 
-## 工具与技术
+2. **详细设计** (Week 3)
+   - 数据库schema设计
+   - API接口设计
+   - 安全方案设计
 
-### 开发工具集成
+3. **技术准备** (Week 3-4)
+   - 技术预研和POC
+   - 开发环境搭建
+   - CI/CD流程设置
 
-**1. IDE配置**
-```json
-// .vscode/settings.json
-{
-  "git.defaultCloneDirectory": "../",
-  "git.enableSmartCommit": true,
-  "git.autofetch": true,
-  "git.pruneOnFetch": true,
-  
-  "files.watcherExclude": {
-    "**/node_modules/**": true,
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true
-  },
-  
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/bower_components": true,
-    "**/.git": true
-  }
-}
-```
+**成果:**
+- 完整的 PRD 文档 (50页)
+- 架构设计文档 (30页)
+- UI/UX 设计稿 (100+页面)
+- 技术选型报告
+- 开发任务拆分 (200+任务)
 
-**2. 自动化脚本**
-```bash
-#!/bin/bash
-# setup-parallel-dev.sh
+## 最佳实践
 
-PROJECT_NAME=$1
-FEATURES=("auth" "product" "order" "payment")
+### 1. 设计即文档
+- 所有设计决策都要文档化
+- 使用 Mermaid 等工具让设计可视化
+- 将设计文档纳入版本控制
 
-echo "Setting up parallel development for $PROJECT_NAME"
+### 2. AI 辅助但不替代
+- AI 提供建议和方案
+- 人类做最终决策
+- 设计需要团队评审
 
-# 创建工作树
-for feature in "${FEATURES[@]}"; do
-    echo "Creating worktree for feature: $feature"
-    git worktree add "../$PROJECT_NAME-$feature" "feature/$feature"
-    
-    # 复制配置文件
-    cp .env.example "../$PROJECT_NAME-$feature/.env"
-    cp package.json "../$PROJECT_NAME-$feature/"
-    
-    # 安装依赖
-    cd "../$PROJECT_NAME-$feature"
-    npm install
-    cd - > /dev/null
-done
-
-echo "Parallel development setup complete!"
-```
-
-### 监控和诊断工具
-
-**1. 协作仪表板**
-```python
-# collaboration_dashboard.py
-import streamlit as st
-import plotly.express as px
-import pandas as pd
-
-class CollaborationDashboard:
-    def __init__(self):
-        self.monitor = CollaborationMonitor()
-    
-    def render_dashboard(self):
-        st.title("团队协作监控仪表板")
-        
-        # 实时指标
-        metrics = self.monitor.collect_collaboration_metrics()
-        
-        col1, col2, col3, col4 = st.columns(4)
-        
-        with col1:
-            st.metric("日提交次数", metrics['daily_commits'], "↑ 12%")
-        
-        with col2:
-            st.metric("代码冲突率", f"{metrics['conflict_rate']:.1%}", "↓ 5%")
-        
-        with col3:
-            st.metric("代码审查时间", f"{metrics['review_time']:.1f}h", "↓ 0.5h")
-        
-        with col4:
-            st.metric("活跃贡献者", metrics['active_contributors'], "→ 0")
-        
-        # 分支分歧图表
-        self.render_branch_divergence_chart(metrics['branch_divergence'])
-        
-        # 工作负载分布
-        self.render_workload_distribution(metrics['workload'])
-    
-    def render_branch_divergence_chart(self, divergence_data):
-        st.subheader("分支分歧状况")
-        
-        df = pd.DataFrame(divergence_data).T
-        fig = px.bar(df, x=df.index, y=['commits_ahead', 'commits_behind'],
-                     title="分支提交差异")
-        st.plotly_chart(fig)
-```
-
-## 最佳实践总结
-
-### 成功要素
-
-**1. 合理的分支策略**
-- 功能分支独立性强
-- 主分支保持稳定
-- 定期同步和集成
-
-**2. 有效的沟通机制**
-- 实时状态同步
-- 定期进度汇报
-- 问题快速响应
-
-**3. 智能化工具支持**
-- AI协作冲突预测
-- 自动化测试集成
-- 持续监控和优化
-
-### 常见陷阱
-
-**1. 过度并行化**
-- 问题：分支过多，管理复杂
-- 解决：合理控制并行度，一般不超过团队人数
-
-**2. 同步不及时**
-- 问题：分支分歧过大，集成困难
-- 解决：建立定期同步机制
-
-**3. 工具配置不当**
-- 问题：工具冲突，效率降低
-- 解决：统一工具配置，提供标准模板
+### 3. 迭代优化
+- 设计不是一次性完成
+- 根据反馈持续优化
+- 保持设计文档更新
 
 ---
 
-**详细内容：**
-- [Git Worktrees 多会话管理](chapter6/git-worktrees.md)
-- [跨会话文档同步机制](chapter6/doc-sync.md)
-- [AI驱动的协作诊断](chapter6/ai-diagnosis.md)
+**详细内容:**
+- [AI驱动的产品设计与管理](chapter6/product-design.md)
+- [AI辅助的系统架构与UI/UX设计](chapter6/architecture-design.md)
 
-**下一章预告：** 第7章将探讨代码审查与质量管控，包括AI增强的代码审查流程、文档驱动的自动测试体系等内容。
+**下一章预告:** 第7章将探讨多会话并行开发,包括 Git Worktrees 多会话管理、跨会话文档同步机制等内容。

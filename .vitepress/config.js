@@ -75,21 +75,29 @@ export default defineConfig({
             ]
           },
           {
-            text: '第6章 多会话并行开发',
+            text: '第6章 产品与架构设计',
             link: '/part3/chapter6.md',
             items: [
-              { text: 'Git Worktrees 多会话管理', link: '/part3/chapter6/git-worktrees.md' },
-              { text: '跨会话文档同步机制', link: '/part3/chapter6/doc-sync.md' },
-              { text: 'AI驱动的协作诊断', link: '/part3/chapter6/ai-diagnosis.md' }
+              { text: 'AI驱动的产品设计与管理', link: '/part3/chapter6/product-design.md' },
+              { text: 'AI辅助的系统架构与UI/UX设计', link: '/part3/chapter6/architecture-design.md' }
             ]
           },
           {
-            text: '第7章 代码审查与质量管控',
+            text: '第7章 多会话并行开发',
             link: '/part3/chapter7.md',
             items: [
-              { text: 'AI增强的代码审查流程', link: '/part3/chapter7/ai-code-review.md' },
-              { text: '文档驱动的自动测试体系', link: '/part3/chapter7/doc-driven-testing.md' },
-              { text: '大厂经验借鉴', link: '/part3/chapter7/best-practices.md' }
+              { text: 'Git Worktrees 多会话管理', link: '/part3/chapter7/git-worktrees.md' },
+              { text: '跨会话文档同步机制', link: '/part3/chapter7/doc-sync.md' },
+              { text: 'AI驱动的协作诊断', link: '/part3/chapter7/ai-diagnosis.md' }
+            ]
+          },
+          {
+            text: '第8章 代码审查与质量管控',
+            link: '/part3/chapter8.md',
+            items: [
+              { text: 'AI增强的代码审查流程', link: '/part3/chapter8/ai-code-review.md' },
+              { text: '文档驱动的自动测试体系', link: '/part3/chapter8/doc-driven-testing.md' },
+              { text: '大厂经验借鉴', link: '/part3/chapter8/best-practices.md' }
             ]
           }
         ]
@@ -99,60 +107,68 @@ export default defineConfig({
         collapsed: false,
         items: [
           {
-            text: '第8章 RAG 聊天机器人开发案例（低风险）',
-            link: '/part4/chapter8.md',
-            items: [
-              { text: '项目背景与团队分工', link: '/part4/chapter8/project-setup.md' },
-              { text: '树状文档与模块信息表实践', link: '/part4/chapter8/doc-practice.md' },
-              { text: 'AI辅助开发全流程示例', link: '/part4/chapter8/development-flow.md' }
-            ]
-          },
-          {
-            text: '第9章 电商数据仪表盘重构（中风险）',
+            text: '第9章 CI/CD自动化实践',
             link: '/part4/chapter9.md',
             items: [
-                { text: '遗留代码的智能考古与文档生成', link: '/part4/chapter9/legacy-code-analysis.md' },
-                { text: 'AI辅助的数据迁移策略与验证', link: '/part4/chapter9/data-migration.md' },
-                { text: '高性能后端的重构与查询优化', link: '/part4/chapter9/backend-refactor.md' },
-                { text: '现代前端的组件化重写', link: '/part4/chapter9/frontend-rewrite.md' },
-                { text: '新旧系统并行与无缝切换', link: '/part4/chapter9/switch-over.md' }
+              { text: '项目背景与团队分工', link: '/part4/chapter9/project-setup.md' },
+              { text: '树状文档与模块信息表实践', link: '/part4/chapter9/doc-practice.md' },
+              { text: 'AI辅助开发全流程示例', link: '/part4/chapter9/development-flow.md' },
+              { text: '构建与优化智能CI/CD流水线', link: '/part4/chapter9/cicd.md' }
             ]
           },
           {
-            text: '第10章 AI交易风险引擎重构（高风险）',
+            text: '第10章 API文档自动化重构（中风险）',
             link: '/part4/chapter10.md',
             items: [
-                { text: 'AI辅助的性能建模与瓶颈预测', link: '/part4/chapter10/performance-modeling.md' },
-                { text: '并发安全与形式化验证', link: '/part4/chapter10/concurrent-safety.md' },
-                { text: 'AI模型的可解释性与公平性保障', link: '/part4/chapter10/explainable-ai.md' },
-                { text: '“影子”与“回放”：零风险的线上验证', link: '/part4/chapter10/shadow-replay.md' },
-                { text: '基于AI分析的智能A/B测试与模型迭代', link: '/part4/chapter10/intelligent-ab-testing.md' }
+              { text: '遗留代码的智能考古与文档生成', link: '/part4/chapter10/legacy-code-analysis.md' },
+              { text: 'AI辅助的数据迁移策略与验证', link: '/part4/chapter10/data-migration.md' },
+              { text: '高性能后端的重构与查询优化', link: '/part4/chapter10/backend-refactor.md' },
+              { text: '现代前端的组件化重写', link: '/part4/chapter10/frontend-rewrite.md' },
+              { text: '重构规划与效率提升', link: '/part4/chapter10/refactoring.md' },
+              { text: '流程闭环与交付成果', link: '/part4/chapter10/delivery.md' },
+              { text: '新旧系统并行与无缝切换', link: '/part4/chapter10/switch-over.md' }
             ]
           }
         ]
       },
       {
-        text: '第五部分：未来展望与最佳实践',
+        text: '第五部分:高风险场景与企业实践',
         collapsed: false,
         items: [
           {
-            text: '第11章 团队使用最佳实践',
+            text: '第11章 知识库与文档站点构建（高风险）',
             link: '/part5/chapter11.md',
             items: [
-              { text: '风险分级使用策略', link: '/part5/chapter11/risk-strategies.md' },
-              { text: '开发者体验优化', link: '/part5/chapter11/developer-experience.md' },
-              { text: 'AI协作治理框架', link: '/part5/chapter11/governance.md' }
+              { text: '跨部门AI协作架构设计', link: '/part5/chapter11/architecture.md' },
+              { text: '数据层、能力层、应用层方案', link: '/part5/chapter11/layered-solution.md' },
+              { text: 'AI辅助的性能建模与瓶颈预测', link: '/part5/chapter11/performance-modeling.md' },
+              { text: '并发安全与形式化验证', link: '/part5/chapter11/concurrent-safety.md' },
+              { text: 'AI模型的可解释性与公平性保障', link: '/part5/chapter11/explainable-ai.md' },
+              { text: '"影子"与"回放"：零风险的线上验证', link: '/part5/chapter11/shadow-replay.md' },
+              { text: '基于AI分析的智能A/B测试与模型迭代', link: '/part5/chapter11/intelligent-ab-testing.md' },
+              { text: '实际成效与可复制经验', link: '/part5/chapter11/results.md' }
             ]
           },
           {
-            text: '第12章 常见问题与解决方案',
+            text: '第12章 文档国际化最佳实践',
             link: '/part5/chapter12.md',
             items: [
-              { text: '如何有效管控AI的“幻觉”？', link: '/part5/chapter12/ai-hallucination.md' },
-              { text: '如何处理并行开发中的合并冲突？', link: '/part5/chapter12/merge-conflicts.md' },
-              { text: '如何修复团队的心理安全障碍？', link: '/part5/chapter12/psychological-safety.md' },
-              { text: '如何管理“人机在环”的协作成本？', link: '/part5/chapter12/collaboration-cost.md' },
-              { text: '如何应对工具链的复杂性挑战？', link: '/part5/chapter12/toolchain-complexity.md' }
+              { text: '风险分级使用策略', link: '/part5/chapter12/risk-strategies.md' },
+              { text: '开发者体验优化', link: '/part5/chapter12/developer-experience.md' },
+              { text: 'AI协作治理框架', link: '/part5/chapter12/governance.md' }
+            ]
+          },
+          {
+            text: '第13章 开源协作与问题解决',
+            link: '/part5/chapter13.md',
+            items: [
+              { text: '如何有效管控AI的"幻觉"？', link: '/part5/chapter13/ai-hallucination.md' },
+              { text: '如何处理并行开发中的合并冲突？', link: '/part5/chapter13/merge-conflicts.md' },
+              { text: '冲突处理机制', link: '/part5/chapter13/conflict-resolution.md' },
+              { text: '如何修复团队的心理安全障碍？', link: '/part5/chapter13/psychological-safety.md' },
+              { text: '心理安全障碍修复', link: '/part5/chapter13/safety-repair.md' },
+              { text: '如何管理"人机在环"的协作成本？', link: '/part5/chapter13/collaboration-cost.md' },
+              { text: '如何应对工具链的复杂性挑战？', link: '/part5/chapter13/toolchain-complexity.md' }
             ]
           }
         ]

@@ -4,6 +4,120 @@
 > 
 > "从代码补全到智能体(Agent)伙伴：DDAD引领的协作范式革命"
 
+## 📚 完整目录导航
+
+### 📖 主要章节
+
+#### [第1章：AI协作开发概述](./chapter1/README.md)
+- [AI编程工具演进历程](./chapter1/ai-evolution.md)
+- [目标读者与适用场景](./chapter1/audience.md)
+- [行业背景与发展趋势](./chapter1/background.md)
+- [DDAD方法论简介](./chapter1/ddad.md)
+- [技术发展趋势分析](./chapter1/trends.md)
+
+#### [第2章：DDAD理论基础](./chapter2/README.md)
+- [核心概念与定义](./chapter2/definition.md)
+- [DDAD核心理念详解](./chapter2/ddad-core.md)
+- [风险分级管理矩阵](./chapter2/risk-matrix.md)
+- [团队效能评估模型](./chapter2/team-effectiveness.md)
+
+#### [第3章：Claude Code工具准备与基础操作](./chapter3/README.md)
+
+**🚀 快速入门与基础**
+- [Claude Code快速入门指南](./chapter3/claude-code-quickstart.md)
+- [常用工作流程详解](./chapter3/common-workflows.md)
+- [核心技能与功能](./chapter3/skills-and-features.md)
+
+**🤖 智能代理与子系统**
+- [子代理系统应用](./chapter3/sub-agents.md)
+- [SuperClaude设置指南](./chapter3/superclaude-setup.md)
+- [SuperClaude模式详解](./chapter3/superclaude-modes.md)
+- [CodeBuddy专注模式](./chapter3/codebuddy-focus.md)
+
+**🔌 集成与扩展**
+- [MCP协议集成应用](./chapter3/mcp-integration.md)
+- [插件系统详解](./chapter3/plugins-system.md)
+- [插件市场指南](./chapter3/plugin-marketplace.md)
+- [插件开发参考](./chapter3/plugins-reference.md)
+- [GitHub Actions集成](./chapter3/github-actions.md)
+- [GitLab CI/CD集成](./chapter3/gitlab-cicd.md)
+
+**⚡ 高级功能与工具**
+- [钩子系统指南](./chapter3/hooks-guide.md)
+- [检查点功能应用](./chapter3/checkpointing.md)
+- [输出样式定制](./chapter3/output-styles.md)
+- [斜杠命令参考](./chapter3/slash-commands.md)
+- [CLI命令参考](./chapter3/cli-reference.md)
+
+**📚 文档与协作**
+- [文档驱动开发流程](./chapter3/doc-driven-flow.md)
+- [文档系统设计](./chapter3/doc-system.md)
+- [团队协作机制设计](./chapter3/collaboration.md)
+- [上下文控制策略](./chapter3/context-control.md)
+
+**🛠️ 工具对比与选择**
+- [现代AI工具指南](./chapter3/modern-ai-tools-guide.md)
+- [AI工具对比分析](./chapter3/tools-comparison.md)
+
+#### [第4章：多智能体协作模式](./chapter4/README.md)
+- [文档标准化规范](./chapter4/doc-standards.md)
+- [心理安全环境建设](./chapter4/psychological-safety.md)
+- [需求分析方法论](./chapter4/requirement-analysis.md)
+
+#### [第5章：实战案例 - 智能客服系统开发](./chapter5/README.md)
+- [完整案例实施指南](./chapter5/case-study-implementation.md)
+
+#### [第6章：最佳实践与未来展望](./chapter6/README.md)
+- [最佳实践总结](./chapter6/best-practices-summary.md)
+- [传统章节内容](./chapter6/chapter8.md)
+- [项目实施指南](./chapter6/chapter9.md)
+- [交付与部署](./chapter6/chapter10.md)
+- [项目实施详细流程](./chapter6/chapter9/)
+  - [CI/CD流程设计](./chapter6/chapter9/cicd.md)
+  - [文档实践指南](./chapter6/chapter9/doc-practice.md)
+- [交付部署详细指南](./chapter6/chapter10/)
+  - [项目交付流程](./chapter6/chapter10/delivery.md)
+  - [代码重构策略](./chapter6/chapter10/refactoring.md)
+  - [逆向文档生成](./chapter6/chapter10/reverse-doc.md)
+  - [系统切换方案](./chapter6/chapter10/switch-over.md)
+
+#### [第7章：工具模板与资源库](./chapter7/README.md)
+- [评估工具集合](./chapter7/assessment-tools.md)
+- [Claude Markdown模板](./chapter7/claude-md-templates.md)
+- [命令参考手册](./chapter7/command-reference.md)
+- [常用命令集合](./chapter7/commands.md)
+- [文档模板库](./chapter7/doc-templates.md)
+- [结语与展望](./chapter7/epilogue.md)
+- [现代化环境配置](./chapter7/modern-setup.md)
+- [工作模式说明](./chapter7/modes.md)
+- [模块开发模板](./chapter7/module-template.md)
+- [提示词收集库](./chapter7/prompt-collection.md)
+- [AI提示词模板库](./chapter7/prompt-templates.md)
+- [参考资料汇总](./chapter7/references.md)
+- [综合资源库](./chapter7/resource-library.md)
+- [SuperClaude快速参考](./chapter7/superclaude-quickref.md)
+- [术语指南](./chapter7/terminology-guide.md)
+- [工具模板集合](./chapter7/tool-templates.md)
+- [工具模板库](./chapter7/tools-templates.md)
+- [使用指南](./chapter7/使用指南.md)
+
+### 🛠️ 实践模板
+
+#### [工具模板库](./chapter7/tool-templates.md)
+完整的项目模板、配置文件和脚本集合
+
+#### [AI提示词模板](./chapter7/prompt-templates.md)
+涵盖开发全流程的AI提示词库
+
+#### [资源库](./chapter7/resource-library.md)
+学习资源、工具推荐和社区资源汇总
+
+### 🧭 快速导航
+
+📋 **[完整导航索引](./NAVIGATION.md)** - 按学习路径、主题、角色快速查找内容
+
+---
+
 ## 🎯 核心理念：从规范驱动(Spec-Driven)到文档驱动(DDAD)
 
 **规范驱动开发（Spec-Driven Development）** 是业界领先的开发思想，强调在编码前编写详尽、清晰、可执行的规范（Spec）。这一理念在AI时代演化为我们的核心方法论：**DDAD（Document-Driven AI Development，文档驱动AI开发）**。
@@ -206,14 +320,18 @@ docs/
 ### 持续学习资源
 
 #### 必读章节
-- [Part 2: DDAD理论基础](part1/chapter2.md)
-- [Part 3: Vibe Coding实践](part3/chapter5.md)
-- [Part 4: 真实案例研究](part4/chapter8.md)
+- [第1章: AI协作开发概述](chapter1/README.md)
+- [第2章: DDAD理论基础](chapter2/README.md)
+- [第3章: Team Vibe Coding方法论](chapter3/README.md)
+- [第4章: 多智能体协作模式](chapter4/README.md)
+- [第5章: 实战案例 - 智能客服系统开发](chapter5/README.md)
+- [第6章: 最佳实践与未来展望](chapter6/README.md)
+- [第7章: 工具模板与资源库](chapter7/README.md)
 
 #### 实践模板
-- [DDAD文档模板库](appendix/doc-templates.md)
-- [AI提示词模板](appendix/prompt-templates.md)
-- [团队协作检查清单](appendix/assessment-tools.md)
+- [工具模板库](chapter7/tool-templates.md)
+- [AI提示词模板](chapter7/prompt-templates.md)
+- [资源库](chapter7/resource-library.md)
 
 ## 🎯 适用读者画像
 
@@ -263,17 +381,19 @@ DDAD正是在这些思想的基础上，针对人机协作的特殊挑战所做�
 ## 📖 阅读指南
 
 ### 推荐学习路径
-1. **理论基础** → [Part 1: AI协作革命](part1/chapter1.md)
-2. **方法掌握** → [Part 2: DDAD核心原理](part1/chapter2.md)  
-3. **实践技能** → [Part 3: Vibe Coding实施](part3/chapter5.md)
-4. **案例深化** → [Part 4: 真实项目案例](part4/chapter8.md)
-5. **未来展望** → [Part 5: 发展趋势](part5/chapter11.md)
+1. **理论基础** → [第1章: AI协作开发概述](chapter1/README.md)
+2. **方法掌握** → [第2章: DDAD核心原理](chapter2/README.md)  
+3. **实践技能** → [第3章: Team Vibe Coding方法论](chapter3/README.md)
+4. **协作模式** → [第4章: 多智能体协作模式](chapter4/README.md)
+5. **案例深化** → [第5章: 实战案例 - 智能客服系统开发](chapter5/README.md)
+6. **最佳实践** → [第6章: 最佳实践与未来展望](chapter6/README.md)
+7. **工具资源** → [第7章: 工具模板与资源库](chapter7/README.md)
 
 ### 快速导航
-- 🚀 [立即开始实践](part3/chapter5.md)
-- 📋 [文档模板库](appendix/doc-templates.md)
-- 🤝 [团队协作指南](part3/chapter5.md)
-- ⚖️ [风险管理手册](part1/chapter2.md)
+- 🚀 [立即开始实践](chapter3/README.md)
+- 📋 [工具模板库](chapter7/tool-templates.md)
+- 🤝 [团队协作指南](chapter3/README.md)
+- ⚖️ [风险管理手册](chapter2/README.md)
 
 ## 🚀 在线阅读与部署
 
@@ -308,8 +428,13 @@ npm run build
 claude-code-in-teams/
 ├── .github/workflows/     # GitHub Actions配置
 ├── .vitepress/           # VitePress配置
-├── part1-5/             # 图书章节内容
-├── appendix/             # 附录和模板
+├── chapter1/             # 第1章: AI协作开发概述
+├── chapter2/             # 第2章: DDAD理论基础
+├── chapter3/             # 第3章: Team Vibe Coding方法论
+├── chapter4/             # 第4章: 多智能体协作模式
+├── chapter5/             # 第5章: 实战案例 - 智能客服系统开发
+├── chapter6/             # 第6章: 最佳实践与未来展望
+├── chapter7/             # 第7章: 工具模板与资源库
 ├── hero-image.svg        # 封面图
 └── index.md             # 首页
 ```

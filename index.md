@@ -10,14 +10,17 @@ hero:
     alt: 团队 Vibe Coding
   actions:
     - theme: brand
+      text: 10分钟体验
+      link: /part0/quick-start/10-minute-vibe-coding
+    - theme: alt
+      text: 工具配置
+      link: /part0/quick-start/essential-tools-setup
+    - theme: alt
       text: 开始阅读
       link: /part1/chapter1
     - theme: alt
       text: 查看案例
       link: /part4/chapter8
-    - theme: alt
-      text: 工具模板
-      link: /appendix/tools-templates
 
 features:
   - icon: 🤖
@@ -63,10 +66,17 @@ features:
 
 ### 🚀 快速开始
 
-1. **了解背景**：从[第一章 前言](part1/chapter1.md)开始，理解为什么需要团队 Vibe Coding
-2. **掌握概念**：学习[核心概念解析](part1/chapter2.md)，建立完整的理论基础
+### 🎯 新手路径 (推荐)
+1. **10分钟体验**：通过[10分钟Vibe Coding体验](part0/quick-start/10-minute-vibe-coding)，快速感受AI协作开发的威力
+2. **工具配置**：按照[必要工具配置指南](part0/quick-start/essential-tools-setup)，完成开发环境搭建
+3. **深入学习**：从[第一章 前言](part1/chapter1.md)开始，理解理论基础
+4. **工具精通**：学习[现代AI开发工具指南](part2/chapter3/modern-ai-tools-guide)，选择最适合的工具组合
+
+### 📚 系统学习路径
+1. **理论基础**：[第一章 前言](part1/chapter1.md) → [核心概念解析](part1/chapter2.md)
+2. **工具掌握**：[AI工具集成](part2/chapter3.md) → [团队Vibe Coding](part2/chapter4.md)
 3. **实践应用**：通过[RAG聊天机器人案例](part4/chapter8.md)，体验完整的开发流程
-4. **工具支持**：使用[工具模板](appendix/tools-templates.md)，快速启动自己的项目
+4. **高级应用**：[电商仪表盘重构](part4/chapter9.md) → [AI功能重构](part4/chapter10.md)
 
 ### 💬 适用读者
 
